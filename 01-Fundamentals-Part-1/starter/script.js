@@ -184,7 +184,6 @@ Themessage is either "Mark's BMI is higher than John's!" or "John's BMI is highe
 Example:"Mark's BMI (28.3) is higher than John's (23.9)!"
 Hint: Use an if/else statement 😉 GOOD LUCK 😀
 
-*/
 
 
 let massMarks = 95;
@@ -203,3 +202,27 @@ if (bmiMarks > bmiJohn){
     console.log(`John's BMI (${bmiJohn}) is higher than Mark's (${bmiMarks})!`)
 
 }
+
+*/
+
+// type conversion
+const inputYear = '1991';
+console.log(Number(inputYear) , inputYear);
+console.log(Number(inputYear) + 18);
+
+
+console.log(Number('Jonas'));
+console.log(typeof NaN);
+
+console.log(String(23));
+
+// type coercion
+
+console.log('I am ' + 23 + ' years old');
+console.log('23' - '10' - 3);
+console.log('23' / '2')
+
+
+let n = '1' + 1;
+n = n -1;
+console.log(n);
