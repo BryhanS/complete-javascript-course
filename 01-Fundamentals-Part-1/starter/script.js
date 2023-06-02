@@ -253,3 +253,21 @@ if (height >= 0){
 }
 
 */
+
+const age = '18';
+if(age === 18) console.log('you just became an adult (strict');
+
+if(age == 18) console.log('you just became an adult (loose)');
+
+const favourite = Number(prompt("what's your favourite number?"));
+console.log(typeof favourite);
+
+if (favourite === 23){
+    console.log('cool! 23 is an amazing number!');
+} else if (favourite === 7){
+    console.log('cool! 7 is a cool number!');
+} else {
+    console.log('Number is not 23 or 7');
+}
+
+if (favourite !== 23) console.log('Why not 23?')
