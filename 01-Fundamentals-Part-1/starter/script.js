@@ -375,4 +375,27 @@ console.log(drink2);
 
 console.log(`I like to drink ${age >= 18 ? 'wine': 'water'}`);
 
+
+
+const bill = 40;
+
+
+let tip;
+
+if(bill >= 50 && bill <= 300){
+    tip = bill * 0.15
+} else{
+    tip = bill * 0.20
+}
+
+console.log(`
+
+The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip} 
+`);
+
+tip = bill >= 50 && bill <= 300 ? tip = bill * 0.15 : tip = bill * 0.20;
+
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
+
 */
+
