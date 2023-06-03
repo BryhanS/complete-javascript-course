@@ -300,7 +300,6 @@ if (hasDriversLicense && hasGoodVision && !isTired){
 } else{
     console.log('Someone else should drive...')
 }
-*/
 
 const day = 'wednesday';
 
@@ -340,3 +339,40 @@ if (day === 'monday'){
 } else{
     console.log('No a valid day');
 }
+
+
+
+3 + 4
+
+1991
+true && false && !false
+
+if (23 > 10) {
+    const str = '23 is bigger';
+}
+
+// the conditional
+
+const age = 15;
+
+age >= 18 ? console.log('I like the drink wine') :
+console.log('I like to drink water'); 
+
+
+const drink = age >= 18 ? 'wine' : 'water';
+
+console.log(drink);
+
+let drink2;
+
+if(age >= 18){
+    drink2 = 'wine';
+} else{
+    drink2 = 'water'
+}
+
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? 'wine': 'water'}`);
+
+*/
