@@ -40,7 +40,6 @@ console.log(appleOrangeJuice);
 const num = Number('23');
 num
 
-*/
 
 //funtion declaretion and expressions
 
@@ -52,7 +51,15 @@ function calAngel(birthYear){
 const age1 = calAngel(1991);
 
 //funtion expresion
+
+
+const calAge2 = function(birthYear){
+    return 2037 - birthYear
+}
+
 const age2 = calAge2(1991);
+
+console.log(age1, age2)
 
 
 const calAge2 = function(birthYear){
@@ -60,4 +67,21 @@ const calAge2 = function(birthYear){
 }
 
 
-console.log(age1, age2)
+//arrow function
+
+const calAge3 = birthYear => 2037 - birthYear;
+const age3 = calAge3(1991);
+console.log(age3);
+
+
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+    const age = 2037 - birthYear;
+    const retirement = 65 - age;
+    // return retirement;
+    return `${firstName} retires in ${retirement} years`;
+}
+
+console.log(yearsUntilRetirement(1991, 'Diego'));
+console.log(yearsUntilRetirement(1980, 'Bob'));
+*/
