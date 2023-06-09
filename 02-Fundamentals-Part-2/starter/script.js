@@ -103,7 +103,6 @@ function fruitProcessor(apples, oranges){
 
 console.log(fruitProcessor(2,3));
 
-*/
 
 //review function
 const calAge = function (birthYear){
@@ -129,3 +128,71 @@ const yearsUntilRetirement = function (birthYear, firstName){
 
 console.log(yearsUntilRetirement(1991, 'jonas'));
 console.log(yearsUntilRetirement(1950, 'mike'));
+
+
+
+
+const calcAverage = (data1, data2, data3) => {
+
+    return (data1 + data2 + data3)/3;
+};
+
+const scoreDolphins = function (data1, data2, data3){
+  const average = calcAverage(data1, data2, data3);
+  return average;
+}
+
+console.log(scoreDolphins(4,5,6));
+
+
+//introduction array
+
+const friend1 = 'Michael';
+const friend2 = 'Steven';
+const friend3 = 'Peter';
+
+const friends = ['Michale', 'Steven','Peter'];
+console.log(friends);
+
+//const years = new Array(1991, 1984, 2009, 2020);
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+
+friends[2] = 'Jat';
+
+console.log(friends);
+
+
+
+const firstName = 'Jonas';
+const jonas = [firstName, 'Salazar', 2037 - 1991, 'teacher', friends];
+
+console.log(jonas);
+
+//exercise
+
+const calAge = function (birthYear){
+    return 2037 -birthYear;
+}
+
+
+const years = [1990, 1967, 2002, 2010, 2018];
+
+const age1 = calAge(years[0]);
+const age2 = calAge(years[1]);
+const age3 = calAge(years[years.length - 1]);
+
+console.log(age1, age2, age3);
+
+
+const ages = [calAge(years[0]), calAge(years[1]), calAge(years[years.length -1])];
+
+console.log(ages);
+
+
+*/
