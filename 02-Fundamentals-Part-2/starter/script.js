@@ -233,7 +233,12 @@ if (friends.includes('Steven')) {
     console.log('You have a friend called Peter');
 }
 
-*/
+
+//new form
+const calctip = function(bill){
+    return bill >=50 && bill<=300 ? bill * 0.15 : bill * 0.2;
+}
+
 
 
 let tip;
@@ -252,4 +257,9 @@ function calcTip(bill) {
 }
 
 console.log(calcTip(100));
-const total = [bills[0] + calcTip(bills[0]),bills[1] + calcTip(bills[1]), bills[2] + calcTip(bills[2])]
+const total = [bills[0] + calcTip(bills[0]),bills[1] + calcTip(bills[1]), bills[2] + calcTip(bills[2])];
+
+*/
+
+
+
