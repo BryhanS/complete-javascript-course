@@ -241,6 +241,7 @@ const calctip = function(bill){
 
 
 
+
 let tip;
 const bills = [125, 555, 44]
 function calcTip(bill) {
@@ -259,7 +260,90 @@ function calcTip(bill) {
 console.log(calcTip(100));
 const total = [bills[0] + calcTip(bills[0]),bills[1] + calcTip(bills[1]), bills[2] + calcTip(bills[2])];
 
+
+
+
+
+const jonasArray = [
+    'jonas',
+    'Salazar',
+    2037-1991,
+    'teacher',
+    ['michael', 'peter', 'steven']
+];
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Salazar',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven']
+};
+
+console.log(jonas);
+console.log(jonas.lastName);
+console.log(jonas['lastName']);
+
+const namekey = 'Name';
+
+console.log(jonas['first' + namekey]);
+console.log(jonas['last' + namekey]);
+
+// console.log(jonas[])
+
+const interestIn = prompt('What do you want to know about Jonas? choose between firstname, lastname,age, job and friends');
+console.log(jonas[interestIn]);
+
+if (jonas[interestIn]){
+    console.log(jonas[interestIn]);
+} else{
+    console.log('Wrong request');
+}
+
+jonas.location = 'Portugal';
+
+jonas['twitter'] = '@jonmasemil'
+console.log(jonas);
+
+
+
+// Challaenge
+
+console.log(`${jonas['firstName']} has ${jonas.friends.length}, and his best friend is called ${jonas.friends[0]} `);
+
 */
 
+//objet methods
 
 
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Salazar',
+    birthYear: 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven'],
+    hasDriversLicense: true,
+    
+
+    calcAge: function(){
+        this.age = 2037 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function () {
+        return `${this.firstName} is a ${this.calcAge()} -years old ${jonas.job}, and he has ${this.hasDriversLicense}`;
+    }
+};
+
+console.log(jonas.calcAge());
+
+console.log(jonas.age);
+console.log(jonas.age);
+console.log(jonas.age);
+
+console.log('hola');
+
+//challange
+
+
+console.log(jonas.getSummary());
